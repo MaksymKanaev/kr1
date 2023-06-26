@@ -34,6 +34,10 @@ body {
    background-color: red;
    height: 300px;
    width: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
 }
 
 #game-board {
@@ -51,4 +55,18 @@ body {
    width: 108px;
    background-image: url(../images/fon.png);
    background-size: 100% 100%;
+}
+
+#game__magazin span {
+   cursor: pointer;
+}
+
+#game__magazin span img {
+   height: 90px;
+   width: 90px;
+   padding: 10px;
+}
+
+#game__magazin span.selected {
+   border: 2px solid gold;
 }
