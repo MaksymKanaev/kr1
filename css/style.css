@@ -70,3 +70,24 @@ body {
 #game__magazin span.selected {
    border: 2px solid gold;
 }
+
+.tover__skin1 {
+   height: 120px;
+   width: 108px;
+   background-image: url(../gif/mag4.gif);
+   background-size: 100% 100%;
+}
+
+.tover__skin2 {
+   height: 120px;
+   width: 108px;
+   background-image: url(../gif/mag2.gif);
+   background-size: 100% 100%;
+}
+
+.tover__skin3 {
+   height: 120px;
+   width: 108px;
+   background-image: url(../gif/mag3.gif);
+   background-size: 100% 100%;
+}
