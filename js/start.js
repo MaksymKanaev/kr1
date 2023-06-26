@@ -7,8 +7,7 @@ function startGame() {
    field.style.display = "flex";
    createArea();
    createEnemy() 
-   createEnemy() 
-   createEnemy() 
+
 }
 
 

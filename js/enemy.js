@@ -2,14 +2,14 @@ const appEnemy = document.querySelector("#game__field");
 let enemy; // Глобальная переменная enemy
 
 function createEnemy() {
-    enemy = document.createElement("div"); // Удалено ключевое слово let
+    enemy = document.createElement("div"); 
     enemy.className = "enemy skin" + random(1, 3);
     enemy.style.top = calculateTopPosition() + "px";
     enemy.style.left = 1227 + "px";
     appEnemy.appendChild(enemy);
+    MoveEnemy(enemy);
 }
 
-// Остальной код остается без изменений
 function calculateTopPosition() {
     const gridHeight = 120; // Высота каждой ячейки в сетке
     const characterHeight = 120/* Ваша высота персонажа */; // Высота персонажа
@@ -38,5 +38,16 @@ function random(min, max) {
     let rand = min + Math.random() * (max + 1 - min);
     return Math.floor(rand);
 }
+
+
+function MoveEnemy(enemy) {
+    let timerId = setInterval(function() {
+      enemy.style.left = enemy.offsetLeft - 10 + "px";
+    }, 150); 
+    setTimeout(function() {
+        createEnemy(enemy);
+      }, 6000);
+  }
+  
 
 
