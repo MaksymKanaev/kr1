@@ -15,16 +15,47 @@ body {
 #game {
    height: 720px;
    width: 1280px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#game__start {
+   min-height: 300px;
+   width: 30%;
+   background-color: #2ab474;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+#game__start h2 {
+   color: aliceblue;
+   font-size: 30px;
+   text-transform: uppercase;
+
+}
+
+#game__start button {
+   background-color: rgba(218, 16, 236, 0.541);
+   padding: 10px 45px;
+   font-size: 25px;
+   text-transform: uppercase;
+   border-radius: 10px;
 }
 
 #game__footer {
    background-color: azure;
    height: 80px;
+   width: 100%;
+   display: none;
 }
 
 #game__field {
    height: 640px;
-   display: flex;
+   display: none;
    justify-content: space-around;
    align-items: center;
 }
@@ -71,21 +102,21 @@ body {
    border: 2px solid gold;
 }
 
-.tover__skin1 {
+.tower.skin1 {
    height: 120px;
    width: 108px;
    background-image: url(../gif/mag4.gif);
    background-size: 100% 100%;
 }
 
-.tover__skin2 {
+.tower.skin2 {
    height: 120px;
    width: 108px;
    background-image: url(../gif/mag2.gif);
    background-size: 100% 100%;
 }
 
-.tover__skin3 {
+.tower.skin3 {
    height: 120px;
    width: 108px;
    background-image: url(../gif/mag3.gif);
