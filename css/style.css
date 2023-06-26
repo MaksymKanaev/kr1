@@ -49,5 +49,6 @@ body {
 .area {
    height: 120px;
    width: 108px;
-   background-color: #395492;
+   background-image: url(../images/fon.png);
+   background-size: 100% 100%;
 }
