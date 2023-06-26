@@ -7,8 +7,8 @@ skins.forEach(skin => {
    skin.addEventListener('click', () => {
       // получаем значение атрибута data-skin кликнутого элемента
       const skinValue = skin.dataset.skin;
-      // устанавливаем значение gamerSkin равным выбранному значению
-      gamerSkin = skinValue;
+      // устанавливаем значение towerSkin равным выбранному значению
+      towerSkin = skinValue;
       // проходимся по всем элементам и удаляем класс selected
       skins.forEach(s => s.classList.remove('selected'));
       // добавляем класс selected выбранному элементу
