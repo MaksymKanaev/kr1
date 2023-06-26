@@ -6,6 +6,9 @@ function startGame() {
    footer.style.display = "flex";
    field.style.display = "flex";
    createArea();
+   createEnemy() 
+   createEnemy() 
+   createEnemy() 
 }
 
 

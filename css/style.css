@@ -122,3 +122,23 @@ body {
    background-image: url(../gif/mag3.gif);
    background-size: 100% 100%;
 }
+
+.enemy {
+      height: 120px;
+      width: 108px;
+      background-size: 100% 100%;
+      position: absolute;
+      
+}
+
+.skin1 {
+   background-image: url(../gif/enemy1.gif);
+}
+
+.skin2 {
+   background-image: url(../gif/enemy2.gif);
+}
+
+.skin3 {
+   background-image: url(../gif/enemy3.gif);
+}
