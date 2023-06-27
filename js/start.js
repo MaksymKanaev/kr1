@@ -7,7 +7,7 @@ function startGame() {
    field.style.display = "flex";
 
    createBlock();
-   createEnemy() 
+   createEnemy()
 
 }
 
