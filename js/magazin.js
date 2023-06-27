@@ -15,3 +15,4 @@ skins.forEach(skin => {
       skin.classList.add('selected');
    });
 });
+

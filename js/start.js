@@ -5,18 +5,20 @@ function startGame() {
    startModal.style.display = "none";
    footer.style.display = "flex";
    field.style.display = "flex";
-   createArea();
+
+   createBlock();
    createEnemy() 
 
 }
 
 
 //Создание блоков полей
-function createArea() {
+function createBlock() {
    for (let i = 0; i < 50; i++) {
-      let area = document.createElement("div"); //создание блок div
-      area.className = 'area'// присвоение класса
-      board.appendChild(area);
+      let block = document.createElement("div"); //создание блок div
+      block.className = 'block'// присвоение класса
+      board.appendChild(block);
    }
+   Tower();
 }
 

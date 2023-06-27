@@ -81,11 +81,12 @@ body {
    margin: 10px;
 }
 
-.area {
+.block {
    height: 120px;
    width: 108px;
    background-image: url(../images/fon.png);
    background-size: 100% 100%;
+   pointer-events: auto;
 }
 
 #game__magazin span {
