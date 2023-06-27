@@ -5,7 +5,10 @@ function startGame() {
    startModal.style.display = "none";
    footer.style.display = "flex";
    field.style.display = "flex";
+
    createBlock();
+   createEnemy() 
+
 }
 
 
