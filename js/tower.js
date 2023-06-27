@@ -16,7 +16,6 @@ function Tower() {
 
    blocks.forEach(block => {
       block.addEventListener('click', (event) => {
-         console.log('Block clicked');
          createTower(event);
       });
    });

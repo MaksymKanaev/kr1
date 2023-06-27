@@ -142,3 +142,12 @@ body {
 .skin3 {
    background-image: url(../gif/enemy3.gif);
 }
+
+
+.bullet {
+   background-color: url(../images/bullet.png);
+   height: 30px;
+   width: 30px;
+   background-size: 100% 100%;
+   position: absolute;
+}
