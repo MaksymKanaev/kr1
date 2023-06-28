@@ -142,7 +142,6 @@ body {
    width: 108px;
    background-size: 100% 100%;
    position: absolute;
-
 }
 
 .skin1 {
@@ -155,4 +154,13 @@ body {
 
 .skin3 {
    background-image: url(../gif/enemy3.gif);
+}
+
+
+.bullet {
+   background-color: url(../images/bullet.png);
+   height: 30px;
+   width: 30px;
+   background-size: 100% 100%;
+   position: absolute;
 }

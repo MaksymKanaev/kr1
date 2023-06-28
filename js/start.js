@@ -5,7 +5,6 @@ function startGame() {
    startModal.style.display = "none";
    footer.style.display = "flex";
    field.style.display = "flex";
-
    createBlock();
    createEnemy()
 
@@ -20,5 +19,6 @@ function createBlock() {
       board.appendChild(block);
    }
    Tower();
+
 }
 
