@@ -138,10 +138,10 @@ body {
 }
 
 .enemy {
-      height: 120px;
-      width: 108px;
-      background-size: 100% 100%;
-      position: absolute;
+   height: 120px;
+   width: 108px;
+   background-size: 100% 100%;
+   position: absolute;
 }
 
 .skin1 {
@@ -158,9 +158,10 @@ body {
 
 
 .bullet {
-   background-color: url(../images/bullet.png);
-   height: 30px;
-   width: 30px;
+   background-image: url(../images/bullet.png);
+   height: 25px;
+   width: 40px;
    background-size: 100% 100%;
    position: absolute;
+   z-index: 2;
 }
