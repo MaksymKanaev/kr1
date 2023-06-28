@@ -1,7 +1,6 @@
 const appBullet = document.querySelector("#game__field");
 console.log(appBullet)
-const towerPlayer = document.querySelector(".tower.skin1");
-console.log(towerPlayer)
+const towerPlayer = document.querySelector(".tower");
 function shoot() {
     let bullet = document.createElement("div");
     bullet.className = "bullet";

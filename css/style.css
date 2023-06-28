@@ -138,10 +138,10 @@ body {
 }
 
 .enemy {
-   height: 120px;
-   width: 108px;
-   background-size: 100% 100%;
-   position: absolute;
+      height: 120px;
+      width: 108px;
+      background-size: 100% 100%;
+      position: absolute;
 }
 
 .skin1 {
