@@ -1,18 +1,28 @@
+mgz1.onclick = function () {
+   removeSkin();
+   selected = 1;
+   console.dir(selected);
+   mgz1.classList.add('selected');
+   towerSkin = "skin1";
+}
+mgz2.onclick = function () {
+   removeSkin();
+   selected = 1;
+   mgz2.classList.add('selected');
+   towerSkin = "skin2";
+}
+mgz3.onclick = function () {
+   removeSkin();
+   selected = 1;
+   mgz3.classList.add('selected');
+   towerSkin = "skin3";
+}
 
-// получаем список элементов с классом skin
-const skins = document.querySelectorAll('.skin');
+function removeSkin() {
+   selected = 0;
+   mgz1.classList.remove('selected');
+   mgz2.classList.remove('selected');
+   mgz3.classList.remove('selected');
+}
 
-// проходимся циклом по всем элементам и добавляем обработчик событий на клик
-skins.forEach(skin => {
-   skin.addEventListener('click', () => {
-      // получаем значение атрибута data-skin кликнутого элемента
-      const skinValue = skin.dataset.skin;
-      // устанавливаем значение towerSkin равным выбранному значению
-      towerSkin = skinValue;
-      // проходимся по всем элементам и удаляем класс selected
-      skins.forEach(s => s.classList.remove('selected'));
-      // добавляем класс selected выбранному элементу
-      skin.classList.add('selected');
-   });
-});
 
