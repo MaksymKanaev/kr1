@@ -12,6 +12,7 @@ function Tower() {
       const tower = document.createElement('div');
       tower.className = 'tower ' + towerSkin;
       event.target.appendChild(tower);
+      shoot()
    }
 
    blocks.forEach(block => {
