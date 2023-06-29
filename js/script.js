@@ -10,3 +10,5 @@ let mgz1 = document.getElementById('mgz1');
 let mgz2 = document.getElementById('mgz2');
 let mgz3 = document.getElementById('mgz3');
 let selected = 0;
+let lifes = document.getElementById('lifes');
+let soundBtn = document.getElementById('btnsound');

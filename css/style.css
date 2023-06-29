@@ -47,10 +47,12 @@ body {
 }
 
 #game__footer {
-   background-color: azure;
+   background-color: rgb(8, 66, 66);
    height: 80px;
    width: 100%;
    display: none;
+   justify-content: space-between;
+   align-items: center;
 }
 
 #game__field {
@@ -116,6 +118,18 @@ body {
    border: 2px solid gold;
 }
 
+.tower {
+   transition: 100ms;
+   animation: show 200ms;
+}
+
+@keyframes show {
+   0% {
+      opacity: 0.5;
+      transform: scale(0);
+   }
+}
+
 .tower.skin1 {
    height: 120px;
    width: 108px;
@@ -167,28 +181,40 @@ body {
 }
 
 /*FOOTER CSS*/
- 
-#game__footer {
-   display: none;
-}
-
-#game__field:hover #game__footer {
-   display: block;
-}
 
 #btnsound {
-   width: 20px; 
-   height: 23px; 
-   margin-left: 400px;
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
 }
 
-#life {
-   margin-right: 10px; 
+#score {
+   color: white;
+   font-size: 35px;
+   z-index: 5;
 }
-#points {
-   margin-left: 20px; 
-   margin-right: 20px; 
+
+#money {
+   color: white;
+   font-size: 35px;
+   z-index: 5;
 }
-#coins {
-   margin-left: 10px; 
+
+#money img {
+   height: 35px;
+   width: 35px;
+}
+
+#money span {
+   padding-left: 5px;
+}
+
+#lifes span {
+   display: block;
+   margin: 10px;
+   float: left;
+   width: 40px;
+   height: 40px;
+   background: url(../images/life.png);
+   background-size: cover;
 }

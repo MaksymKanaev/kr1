@@ -13,7 +13,7 @@ function moveShot(bullet) {
         isHit(bullet); // Попадание по врагам
         bullet.style.left = bullet.offsetLeft + 10 + 'px';
         // удаление пули если вышла за поля экрана
-        if (bullet.offsetLeft > document.querySelector("#game__board").clientWidth) {
+        if (bullet.offsetLeft > board.offsetLeft + document.querySelector("#game__board").clientWidth) {
             bullet.remove();
             clearInterval(idTimer);
         }

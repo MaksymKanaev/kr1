@@ -5,7 +5,7 @@ function createEnemy() {
     enemy = document.createElement("div");
     enemy.className = "enemy skin" + random(1, 3);
     enemy.style.top = appEnemy.offsetTop + calculateTopPosition() + "px";
-    enemy.style.left = 1227 + "px";
+    enemy.style.left = appEnemy.offsetLeft + appEnemy.offsetWidth - 50 + "px";
     appEnemy.appendChild(enemy);
     MoveEnemy(enemy);
 }
