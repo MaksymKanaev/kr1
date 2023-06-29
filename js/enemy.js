@@ -39,17 +39,28 @@ function random(min, max) {
 function MoveEnemy(enemy) {
     let timerId = setInterval(function () {
         enemy.style.left = enemy.offsetLeft - 10 + "px";
+        if (enemy.offsetLeft < document.querySelector("#game__board").offsetLeft) {
+            removeEnemy(enemy);
+            clearInterval(timerId);
+            // !!!
+        }
+    
+    }, 10);
 
-        // if (enemy.offsetLeft <= towerPlayer.offsetLeft + towerPlayer.offsetWidth) {
-        //   enemy.remove();
-        // }
-    }, 150);
-
-    setTimeout(function () {
-        createEnemy(enemy);
-    }, 6000);
+    // setTimeout(function () {
+    //     createEnemy(enemy);
+    // }, 6000);
 }
 
 
-
+function removeEnemy (enemy) {
+    setTimeout(function () {
+        enemy.remove();
+        setTimeout(function () {
+            for (let i = 0; i < 1; i++) {
+                createEnemy();
+            }
+        }, 1000);
+    }, 800);
+}
 
