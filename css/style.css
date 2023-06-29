@@ -165,3 +165,30 @@ body {
    position: absolute;
    z-index: 2;
 }
+
+/*FOOTER CSS*/
+ 
+#game__footer {
+   display: none;
+}
+
+#game__field:hover #game__footer {
+   display: block;
+}
+
+#btnsound {
+   width: 20px; 
+   height: 23px; 
+   margin-left: 400px;
+}
+
+#life {
+   margin-right: 10px; 
+}
+#points {
+   margin-left: 20px; 
+   margin-right: 20px; 
+}
+#coins {
+   margin-left: 10px; 
+}
