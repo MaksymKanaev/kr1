@@ -42,6 +42,7 @@ function MoveEnemy(enemy) {
         if (enemy.offsetLeft < document.querySelector("#game__board").offsetLeft) {
             removeEnemy(enemy);
             clearInterval(timerId);
+            // !!!
         }
     
     }, 10);
