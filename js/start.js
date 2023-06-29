@@ -8,6 +8,7 @@ function startGame() {
    createBlock();
    createEnemy();
    lifesIconPlayer();
+   storeCheck();
 }
 
 
@@ -19,6 +20,8 @@ function createBlock() {
       board.appendChild(block);
    }
    Tower();
-
 }
 
+function diePlayer() {
+   alert('GAME OWER')
+}

@@ -44,7 +44,7 @@ function MoveEnemy(enemy) {
             clearInterval(timerId);
             // !!!
         }
-    
+
     }, 10);
 
     // setTimeout(function () {
@@ -53,7 +53,7 @@ function MoveEnemy(enemy) {
 }
 
 
-function removeEnemy (enemy) {
+function removeEnemy(enemy) {
     setTimeout(function () {
         enemy.remove();
         setTimeout(function () {

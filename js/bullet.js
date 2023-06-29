@@ -33,7 +33,7 @@ function isHit(bullet) {
             && bullet.offsetLeft < enemy.offsetLeft + enemy.clientWidth  //правый верхний угол
         ) {
             // createBoom(bullet.offsetTop, bullet.offsetLeft);
-            // score.innerText++;
+            givMoneyScore();
             bullet.remove(); // удаление пули при попадании
             enemy.remove(); // удаление врага
             createEnemy();

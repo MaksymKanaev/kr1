@@ -12,3 +12,6 @@ let mgz3 = document.getElementById('mgz3');
 let selected = 0;
 let lifes = document.getElementById('lifes');
 let soundBtn = document.getElementById('btnsound');
+let score = document.querySelector('#score span');
+let money = document.querySelector('#money span');
+
