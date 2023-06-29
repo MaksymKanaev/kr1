@@ -71,7 +71,8 @@ function EndGame () {
 
     footer.classList.add("hidden")
     appBlock.innerHTML = "";
-    const score = document.querySelector('.end_game span');
+    const score = document.querySelector('.end_game span')
+    // !!!
 }
 
 
