@@ -120,7 +120,7 @@ body {
 
 .tower {
    transition: 100ms;
-   animation: show 200ms;
+   animation: show 500ms;
 }
 
 @keyframes show {
@@ -156,6 +156,8 @@ body {
    width: 108px;
    background-size: 100% 100%;
    position: absolute;
+   transition: 100ms;
+   animation: show 1000ms;
 }
 
 .skin1 {
