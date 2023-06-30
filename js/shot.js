@@ -1,13 +1,12 @@
 //Функция под createBoom(bullet.offsetTop, bullet.offsetLeft);
-function createBoom(top, left) {
-  let boom = document.createElement("img");
-  boom.className = "boom";
-  boom.src = "images/blood.gif"; 
-  boom.style.top = top - 80 + "px"; /*top + "px";*/
-  boom.style.left = left - 100 + "px"; /*left + "px";*/
+function createBoomEnemy(top, left) {
+  let boom = document.createElement("div");
+  boom.className = "enemyboom";
+  boom.style.top = top - 40 + "px"; /*top + "px";*/
+  boom.style.left = left + "px"; /*left + "px";*/
   board.appendChild(boom);
 
-  setTimeout(function() {
+  setTimeout(function () {
     boom.remove();
   }, 1000); // время взрыва
 }
@@ -15,32 +14,18 @@ function createBoom(top, left) {
 
 
 
-
 //Столкновение зомби с магазином
 
-function createBoom(top, left) {
-  let boom = document.createElement("img");
-  boom.className = "boom";
-  boom.src = "images/boom.gif"; 
-  boom.style.top = top - 80 + "px";
-  boom.style.left = left - 100 + "px";
+function createBoomTower(top, left) {
+  let boom = document.createElement("div");
+  boom.className = "towerboom";
+  boom.style.top = top + 100 + "px";
+  boom.style.left = left + 10 + "px";
   board.appendChild(boom);
 
-  setTimeout(function() {
-      boom.remove();
+  setTimeout(function () {
+    boom.remove();
   }, 1000);
 }
 
 
-
-
-
-//ДЛЯ СТОЛКНОВЕНИЯ ЗОМБИ С МАГАЗИНОМ
-function checkCollision(enemy, magazin) {
-   
-  magazin.forEach(magazin => {
-      if (enemy.offsetTop === magazin.offsetTop && enemy.offsetLeft === magazin.offsetLeft) {
-          magazin.remove(); // Удаляем магазин
-      }
-  });
-}

@@ -6,9 +6,10 @@ function startGame() {
    footer.style.display = "flex";
    field.style.display = "flex";
    createBlock();
-   createEnemy();
+   let enemy = createEnemy();
    lifesIconPlayer();
    storeCheck();
+   Tower();
 }
 
 
@@ -22,4 +23,20 @@ function createBlock() {
    Tower();
 }
 
+function EndGame() {
+   let appBlock = document.querySelector("#game__field")
+   let EndGameBlock = document.querySelector(".end_game");
+   EndGameBlock.classList.remove("visually-hidden");
+   footer.classList.add("visually-hidden")
+   appBlock.innerHTML = "";
+   let scoreElement = document.querySelector('.end_game span');
+   scoreElement.textContent = score.textContent;
+   footer.style.display = "none";
+   field.style.display = "none";
+}
 
+
+let btnRestartGame = document.querySelector(".restartGame");
+btnRestartGame.onclick = function () {
+   location.reload();
+}

@@ -1,5 +1,4 @@
 const appEnemy = document.querySelector("#game__board");
-let enemy; // Глобальная переменная enemy
 
 function createEnemy() {
     enemy = document.createElement("div");
@@ -38,6 +37,7 @@ function random(min, max) {
 
 function MoveEnemy(enemy) {
     let timerId = setInterval(function () {
+        towerDestruction(enemy);
         enemy.style.left = enemy.offsetLeft - 10 + "px";
 
         if (enemy.offsetLeft + enemy.offsetWidth - 50 <= board.offsetLeft && enemy.offsetLeft != 0) {
@@ -64,19 +64,19 @@ function removeEnemy(enemy) {
     }, 800);
 }
 
-function EndGame() {
-    let appBlock = document.querySelector("#game__field")
-    let EndGameBlock = document.querySelector(".end_game");
-    EndGameBlock.classList.remove("visually-hidden");
-    footer.classList.add("visually-hidden")
-    appBlock.innerHTML = "";
-    let scoreElement = document.querySelector('.end_game span');
-    scoreElement.textContent = score.textContent;
-}
-
-
-let btnRestartGame = document.querySelector(".restartGame");
-btnRestartGame.onclick = function () {
-    location.reload();
+function towerDestruction(enemy) {
+    let towers = document.querySelectorAll(".tower");
+    towers.forEach(function (tower) {
+        if ((enemy.offsetTop + 50) > tower.offsetTop // левый верхний угол
+            && (enemy.offsetTop + 50) < tower.offsetTop + tower.offsetHeight //левый нижний угол
+            && enemy.offsetLeft > tower.offsetLeft //левый верхний угол
+            && enemy.offsetLeft < tower.offsetLeft + tower.clientWidth  //правый верхний угол
+        ) {
+            createBoomTower(tower.offsetTop, tower.offsetLeft);
+            enemy.remove(); // удаление пули при попадании
+            tower.remove(); // удаление врага
+            createEnemy();
+        }
+    })
 }
 

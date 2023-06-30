@@ -12,6 +12,7 @@ function Tower() {
          setInterval(function () {
             shoot(tower);
          }, 3000);
+         towerDestruction(tower, enemy);
          removeSkin(); //видалення скинів після будівницва
       }
    }
@@ -23,5 +24,4 @@ function Tower() {
    });
 
 }
-
 
