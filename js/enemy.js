@@ -64,3 +64,5 @@ function removeEnemy(enemy) {
     }, 800);
 }
 
+
+

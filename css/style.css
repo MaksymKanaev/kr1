@@ -220,3 +220,18 @@ body {
    background: url(../images/life.png);
    background-size: cover;
 }
+
+
+/*BOOM ПРИ ПОПАДАНИИ В ЗОМБИ*/
+.boom {
+   background: url(../images/blood.gif);
+   position: absolute;
+   width: 180px;
+   height: 100px;
+   z-index: 9999;
+   top: 40%;
+   left: 50%;
+   background-size: cover;
+}
+
+
