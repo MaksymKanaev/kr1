@@ -22,8 +22,8 @@ body {
 }
 
 #game__start {
-   min-height: 300px;
-   width: 30%;
+   min-height: 321px;
+   width: 41%;
    background-color: #2ab474;
    display: flex;
    flex-direction: column;
@@ -296,3 +296,4 @@ body {
 .end_game button:hover {
    background-color: #45a049;
 }
+
