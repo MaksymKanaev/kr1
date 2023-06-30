@@ -268,25 +268,27 @@ body {
    transform: translate(-50%, -50%);
    height: 200px;
    width: 200px;
-   background-color: #f1f1f1;
+   background-color: #333; 
    border-radius: 10px;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
 }
 
 .end_game h2 {
    font-size: 24px;
    margin-bottom: 10px;
+   color: #ff5733; 
 }
 
 .end_game p {
    font-size: 16px;
    margin-bottom: 20px;
+   color: #bbb; 
 }
 
 .end_game button {
    padding: 10px 20px;
    font-size: 18px;
-   background-color: #4caf50;
+   background-color: #880000; 
    color: #fff;
    border: none;
    border-radius: 4px;
@@ -294,5 +296,5 @@ body {
 }
 
 .end_game button:hover {
-   background-color: #45a049;
+   background-color: #660000; 
 }
