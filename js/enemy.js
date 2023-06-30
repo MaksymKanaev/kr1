@@ -39,17 +39,17 @@ function random(min, max) {
 function MoveEnemy(enemy) {
     let timerId = setInterval(function () {
         enemy.style.left = enemy.offsetLeft - 10 + "px";
-        if (enemy.offsetLeft < document.querySelector("#game__board").offsetLeft) {
+
+        if (enemy.offsetLeft + enemy.offsetWidth - 50 <= board.offsetLeft && enemy.offsetLeft != 0) {
             removeEnemy(enemy);
             clearInterval(timerId);
-            // !!!
+            minusLifePlayer();
         }
 
     }, 10);
-
-    // setTimeout(function () {
-    //     createEnemy(enemy);
-    // }, 6000);
+    setTimeout(function () {
+        createEnemy(enemy);
+    }, 8000);
 }
 
 
@@ -64,5 +64,19 @@ function removeEnemy(enemy) {
     }, 800);
 }
 
+function EndGame() {
+    let appBlock = document.querySelector("#game__field")
+    let EndGameBlock = document.querySelector(".end_game");
+    EndGameBlock.classList.remove("visually-hidden");
+    footer.classList.add("visually-hidden")
+    appBlock.innerHTML = "";
+    let scoreElement = document.querySelector('.end_game span');
+    scoreElement.textContent = score.textContent;
+}
 
+
+let btnRestartGame = document.querySelector(".restartGame");
+btnRestartGame.onclick = function () {
+    location.reload();
+}
 

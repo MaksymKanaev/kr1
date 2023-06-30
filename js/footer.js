@@ -3,7 +3,7 @@ let numbersLifes = 3;
 function minusLifePlayer() {
    numbersLifes--;
    if (numbersLifes <= 0) {
-      diePlayer()
+      EndGame();
    }
    lifesIconPlayer();
 }
