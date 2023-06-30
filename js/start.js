@@ -22,6 +22,4 @@ function createBlock() {
    Tower();
 }
 
-function diePlayer() {
-   alert('GAME OWER')
-}
+
