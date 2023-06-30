@@ -46,7 +46,7 @@ function MoveEnemy(enemy) {
             minusLifePlayer();
         }
 
-    }, 10);
+    }, 150);
     setTimeout(function () {
         createEnemy(enemy);
     }, 8000);
