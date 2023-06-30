@@ -43,13 +43,13 @@ function MoveEnemy(enemy) {
             removeEnemy(enemy);
             clearInterval(timerId);
             EndGame ()
+            // !!!
         }
 
     }, 10);
-
-    // setTimeout(function () {
-    //     createEnemy(enemy);
-    // }, 6000);
+    setTimeout(function () {
+        createEnemy(enemy);
+    }, 8000);
 }
 
 
@@ -67,12 +67,11 @@ function removeEnemy(enemy) {
 function EndGame () {
     let appBlock = document.querySelector("#game__field")
     let EndGameBlock = document.querySelector(".end_game");
-    EndGameBlock.classList.remove("hidden");
-
-    footer.classList.add("hidden")
+    EndGameBlock.classList.remove("visually-hidden");
+    footer.classList.add("visually-hidden")
     appBlock.innerHTML = "";
-    const score = document.querySelector('.end_game span')
-    // !!!
+    let scoreElement = document.querySelector('.end_game span');
+    scoreElement.textContent = score.textContent;
 }
 
 
