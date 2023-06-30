@@ -42,7 +42,7 @@ function MoveEnemy(enemy) {
         if (enemy.offsetLeft < document.querySelector("#game__board").offsetLeft) {
             removeEnemy(enemy);
             clearInterval(timerId);
-            // !!!
+            EndGame ()
         }
 
     }, 10);
@@ -64,3 +64,19 @@ function removeEnemy(enemy) {
     }, 800);
 }
 
+function EndGame () {
+    let appBlock = document.querySelector("#game__field")
+    let EndGameBlock = document.querySelector(".end_game");
+    EndGameBlock.classList.remove("hidden");
+
+    footer.classList.add("hidden")
+    appBlock.innerHTML = "";
+    const score = document.querySelector('.end_game span')
+    // !!!
+}
+
+
+let btnRestartGame = document.querySelector(".restartGame");
+btnRestartGame.onclick = function () {
+    location.reload();
+}
