@@ -182,14 +182,6 @@ body {
    z-index: 2;
 }
 
-.bullet .skin2 {
-   height: 25px;
-   width: 40px;
-   background-size: 100% 100%;
-   position: absolute;
-   z-index: 2;
-   background-image: url(../images/bulletskin2.png);
-}
 
 
 
