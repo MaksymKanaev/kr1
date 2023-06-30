@@ -38,7 +38,11 @@ function random(min, max) {
 function MoveEnemy(enemy) {
     let timerId = setInterval(function () {
         towerDestruction(enemy);
-        enemy.style.left = enemy.offsetLeft - 10 + "px";
+        if(enemy.classList.contains("skin1")) {
+            enemy.style.left = enemy.offsetLeft - 40 + "px";
+        } else {
+            enemy.style.left = enemy.offsetLeft - 10 + "px";
+        }
 
         if (enemy.offsetLeft + enemy.offsetWidth - 50 <= board.offsetLeft && enemy.offsetLeft != 0) {
             removeEnemy(enemy);
@@ -49,7 +53,7 @@ function MoveEnemy(enemy) {
     }, 150);
     setTimeout(function () {
         createEnemy(enemy);
-    }, 8000);
+    }, 12000);
 }
 
 
