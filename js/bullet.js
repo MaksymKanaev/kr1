@@ -1,11 +1,21 @@
 function shoot(tower) {
     let bullet = document.createElement("div");
     bullet.className = "bullet";
+    if (tower.classList.contains("skin2")) {
+        bullet.style.backgroundImage = "url(../images/bulletskin2.png)";
+    } else if (tower.classList.contains("skin1")) {
+        bullet.style.backgroundImage = "url(../images/bullet.png)";
+    } else {
+        bullet.style.backgroundImage = "url(../images/bulletskin3.png)";
+    }
     bullet.style.top = tower.offsetTop + 50 + "px";
     bullet.style.left = tower.offsetLeft + (tower.offsetWidth / 2) + "px";
     board.appendChild(bullet);
-    moveShot(bullet);
-}
+    moveShot(bullet);    
+} 
+
+
+
 
 //функция движения пули
 function moveShot(bullet) {
