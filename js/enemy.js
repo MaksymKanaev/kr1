@@ -79,3 +79,4 @@ let btnRestartGame = document.querySelector(".restartGame");
 btnRestartGame.onclick = function () {
     location.reload();
 }
+

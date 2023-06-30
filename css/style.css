@@ -220,6 +220,19 @@ body {
    background: url(../images/life.png);
    background-size: cover;
 }
+
+/*BOOM ПРИ ПОПАДАНИИ В ЗОМБИ*/
+.boom {
+   background: url(../images/blood.gif);
+   position: absolute;
+   width: 180px;
+   height: 100px;
+   z-index: 9999;
+   top: 40%;
+   left: 50%;
+   background-size: cover;
+}
+
 .visually-hidden {
    position: absolute;
    width: 1px;
@@ -232,7 +245,6 @@ body {
    clip: rect(0 0 0 0);
    overflow: hidden;
  }
-
 
  .end_game {
    display: flex;
@@ -273,3 +285,4 @@ body {
 .end_game button:hover {
    background-color: #45a049;
 }
+
