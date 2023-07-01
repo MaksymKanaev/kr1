@@ -1,6 +1,6 @@
 towerPrice1 = 5; //стоимость 1 башни
 towerPrice2 = 10; //стоимость 2 башни
-towerPrice3 = 30; //стоимость 3 башни
+towerPrice3 = 20; //стоимость 3 башни
 // Функція вибору 1 товару з магазину
 mgz1.onclick = function () {
    if (money.innerText >= towerPrice1) { //перевірка на достатність коштів
