@@ -44,7 +44,7 @@ function MoveEnemy(enemy) {
             enemy.style.left = enemy.offsetLeft - 10 + "px";
         }
 
-        if (enemy.offsetLeft + enemy.offsetWidth - 50 <= board.offsetLeft && enemy.offsetLeft != 0) {
+        if (enemy.offsetLeft + enemy.offsetWidth - 90 <= board.offsetLeft && enemy.offsetLeft != 0) {
             removeEnemy(enemy);
             clearInterval(timerId);
             minusLifePlayer();
