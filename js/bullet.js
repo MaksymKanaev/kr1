@@ -6,7 +6,7 @@ function shoot(tower) {
     } else if (tower.classList.contains("skin1")) {
         bullet.style.backgroundImage = "url(../images/bullet.png)";
     } else {
-        bullet.style.backgroundImage = "url(../images/bulletskin3.png)";
+        tower3Boom();
     }
     bullet.style.top = tower.offsetTop + 50 + "px";
     bullet.style.left = tower.offsetLeft + (tower.offsetWidth / 2) + "px";
@@ -62,7 +62,21 @@ function isHit(bullet, tower) {
     });
 }
 
+function tower3Boom() {
+    //Выбор всех элементов     
+    let enemies = document.querySelectorAll(".enemy");
 
+    enemies.forEach(function (enemy) {
+        //Создание взрава на месте нахождения врагов
+        createBoomEnemy(enemy.offsetTop, enemy.offsetLeft)
+        enemy.remove();
+        givMoneyScore();
+    });
+    createEnemy();
+    setTimeout(function () {
+        createEnemy(enemy);
+    }, 9000);
+}
 
 
 

@@ -14,12 +14,12 @@ function Tower() {
             setInterval(function () {
                shoot(tower);
             }, 20000);
-         } else {
+         } else if (tower.classList.contains("skin1")) {
             shoot(tower);
             setInterval(function () {
                shoot(tower);
             }, 3500);
-         }
+         } else { shoot(tower); };
          towerDestruction(tower, enemy);
          removeSkin(); //видалення скинів після будівницва
       }
