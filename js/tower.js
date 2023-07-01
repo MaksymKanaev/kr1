@@ -10,13 +10,15 @@ function Tower() {
          storeCheck(); //Функція вимикання активного класу при зменшенні монет
          //функція пострілу башні з інтервалом 3с.
          if (tower.classList.contains("skin2")) {
+            shoot(tower);
             setInterval(function () {
                shoot(tower);
-            }, 10000);
+            }, 20000);
          } else {
+            shoot(tower);
             setInterval(function () {
                shoot(tower);
-            }, 3000);
+            }, 3500);
          }
          towerDestruction(tower, enemy);
          removeSkin(); //видалення скинів після будівницва
