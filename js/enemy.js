@@ -38,8 +38,8 @@ function random(min, max) {
 function MoveEnemy(enemy) {
     let timerId = setInterval(function () {
         towerDestruction(enemy);
-        if(enemy.classList.contains("skin1")) {
-            enemy.style.left = enemy.offsetLeft - 40 + "px";
+        if (enemy.classList.contains("skin1")) {
+            enemy.style.left = enemy.offsetLeft - 20 + "px";
         } else {
             enemy.style.left = enemy.offsetLeft - 10 + "px";
         }
@@ -79,7 +79,7 @@ function towerDestruction(enemy) {
             createBoomTower(tower.offsetTop, tower.offsetLeft);
             enemy.remove(); // удаление пули при попадании
             tower.remove(); // удаление врага
-            createEnemy();
+            // createEnemy();
         }
     })
 }
