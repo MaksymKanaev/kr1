@@ -53,6 +53,9 @@ function MoveEnemy(enemy) {
     }, 150);
     setTimeout(function () {
         createEnemy(enemy);
+    }, 7000);
+    setTimeout(function () {
+        createEnemy(enemy);
     }, 12000);
 }
 

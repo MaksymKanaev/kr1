@@ -56,7 +56,7 @@ function isHit(bullet, tower) {
                 givMoneyScore(); // увеличение счета денег
                 bullet.remove(); // удаление пули при попадании
                 enemy.remove(); // удаление врага
-                createEnemy();// создание нового врага
+                // createEnemy();// создание нового врага
             }
         }
     });
