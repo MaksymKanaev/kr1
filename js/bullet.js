@@ -14,19 +14,22 @@ function shoot(tower) {
     moveShot(bullet, tower);
 }
 
-
-
-
 //функция движения пули
 function moveShot(bullet, tower) {
     let idTimer = setInterval(function () {
         isHit(bullet, tower); // Попадание по врагам
         bullet.style.left = bullet.offsetLeft + 10 + 'px';
         // удаление пули если вышла за поля экрана
-        if (bullet.offsetLeft > board.offsetLeft + document.querySelector("#game__board").clientWidth) {
-            bullet.remove();
-            clearInterval(idTimer);
-        }
+        if (field.style.display != "none") {
+            if (bullet.offsetLeft > board.offsetLeft + document.querySelector("#game__board").clientWidth) {
+                bullet.remove();
+                clearInterval(idTimer);
+            };
+            if (bullet.offsetTop == 50) {
+                bullet.remove();
+                clearInterval(idTimer);
+            };
+        } else { return; }
     }, 100);
 }
 

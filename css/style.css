@@ -136,7 +136,7 @@ body {
 .tower.skin1 {
    height: 120px;
    width: 108px;
-   background-image: url(../gif/mag4.gif);
+   background-image: url(../gif/player3.gif);
    background-size: 100% 100%;
 }
 
@@ -150,7 +150,7 @@ body {
 .tower.skin3 {
    height: 120px;
    width: 108px;
-   background-image: url(../gif/player3.gif);
+   background-image: url(../gif/mag4.gif);
    background-size: 100% 100%;
 }
 
