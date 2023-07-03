@@ -21,7 +21,7 @@ body {
    align-items: center;
    border: 41px solid transparent;
    box-sizing: content-box;
-   border-image: url(../images/border.png) 12% round;
+   border-image: url(../images/border2.png) 12% round;
 }
 
 #game__start {
