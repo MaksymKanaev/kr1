@@ -14,4 +14,5 @@ const lifes = document.getElementById('lifes');
 const soundBtn = document.getElementById('btnsound');
 const score = document.querySelector('#score span');
 const money = document.querySelector('#money span');
+const audioPlayer = document.querySelector('#audio');
 

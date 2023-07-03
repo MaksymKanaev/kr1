@@ -5,6 +5,7 @@ function startGame() {
    startModal.style.display = "none";
    footer.style.display = "flex";
    field.style.display = "flex";
+   audioPlayer.play();
    createBlock();
    let enemy = createEnemy();
    lifesIconPlayer();
