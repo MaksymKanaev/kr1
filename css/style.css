@@ -163,15 +163,15 @@ body {
    animation: show 1000ms;
 }
 
-.skin1 {
+.enemy.skin1 {
    background-image: url(../gif/enemy1.gif);
 }
 
-.skin2 {
+.enemy.skin2 {
    background-image: url(../gif/enemy2.gif);
 }
 
-.skin3 {
+.enemy.skin3 {
    background-image: url(../gif/enemy3.gif);
 }
 
